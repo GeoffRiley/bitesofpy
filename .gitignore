@@ -105,3 +105,8 @@ venv.bak/
 
 # PyCharm files
 **.idea
+
+# pybite challenges
+bite.html
+test_*.py
+git.txt
