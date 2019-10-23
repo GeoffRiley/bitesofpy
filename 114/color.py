@@ -32,18 +32,25 @@ class Color:
     @classmethod
     def hex2rgb(cls, hex_str: str) -> tuple:
         """Class method that converts a hex value into an rgb one"""
-        if not re.match(r'#[0-9A-Fa-f]{6}', hex_str):
-            raise ValueError()
-        result = int(hex_str[1:3], 16), int(hex_str[3:5], 16), int(hex_str[5:7], 16)
-        return result
+        # Using regex will perform more comprehensive checking…
+        # > if not re.match(r'#[0-9A-Fa-f]{6}', hex_str):
+        # but testing length and first character is quicker
+        if len(hex_str) != 7 or hex_str[0] != '#':
+            raise ValueError('Invalid hex colour string')
+        try:
+            return tuple(bytes.fromhex(hex_str[1:]))
+        except ValueError as exp:
+            raise ValueError(f'Invalid hex value ({exp.args})')
 
     @classmethod
     def rgb2hex(cls, rbg_tuple: tuple) -> str:
         """Class method that converts an rgb value into a hex one"""
         if len(rbg_tuple) != 3 or any((x < 0) or (x > 255) for x in rbg_tuple):
-            raise ValueError()
-        result = f'#{rbg_tuple[0]:02x}{rbg_tuple[1]:02x}{rbg_tuple[2]:02x}'
-        return result
+            raise ValueError('Invalid rgb colour triplet')
+        try:
+            return f'#{bytes(rbg_tuple).hex()}'
+        except ValueError as exp:
+            raise ValueError(f'Invalid rgb value ({exp.args})')
 
     def __repr__(self):
         """Returns the repl of the object"""
@@ -51,4 +58,4 @@ class Color:
 
     def __str__(self):
         """Returns the string value of the color object"""
-        return f'({", ".join(str(x) for x in self.rgb)})'
+        return f'{self.rgb}' if self.rgb is not None else 'Unknown'
