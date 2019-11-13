@@ -1,11 +1,10 @@
 from pathlib import Path
 from urllib.request import urlretrieve
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 from bs4 import BeautifulSoup, Tag
 
-url = ("https://bites-data.s3.us-east-2.amazonaws.com/"
-       "best-programming-books.html")
+url = "https://bites-data.s3.us-east-2.amazonaws.com/" "best-programming-books.html"
 tmp = Path("/tmp")
 html_file = tmp / "books.html"
 
@@ -23,6 +22,7 @@ class Book:
     rank - integer rank to be updated once the books have been sorted
     rating - float as indicated on the page
     """
+
     title: str
     author: str
     year: int
@@ -30,12 +30,14 @@ class Book:
     rating: float
 
     def _rating(self):
-        res = f'{self.rating:.2f}'
-        return res[:-1] if res[-1] == '0' else res
+        res = f"{self.rating:.2f}"
+        return res[:-1] if res[-1] == "0" else res
 
     def __str__(self):
-        return f'[{self.rank:03}] {self.title} ({self.year})\n' \
-               f'      {self.author} {self._rating()}'
+        return (
+            f"[{self.rank:03}] {self.title} ({self.year})\n"
+            f"      {self.author} {self._rating()}"
+        )
 
 
 def _get_soup(file):
@@ -71,39 +73,34 @@ def load_data():
     with the highest rating should be first and go down from there.
     """
     soup = _get_soup(html_file)
-    book_list = soup.find('div', {'class': 'books'})
+    book_list = soup.find("div", {"class": "books"})
     books = []
     book: Tag
-    for book in book_list.find_all('div', {'class': 'book'}):
-        title = book.select('h2.main')[0].text
-        if 'python' not in title.lower():
+    for book in book_list.find_all("div", {"class": "book"}):
+        title = book.select("h2.main")[0].text
+        if "python" not in title.lower():
             continue
         try:
-            author_a = book.select('h3.authors > a')[0].text.split(' ')
+            author_a = book.select("h3.authors > a")[0].text.split(" ")
             author = f'{author_a[-1]}, {" ".join(author_a[:-1])}'
-            date_span = book.select('span.date')
+            date_span = book.select("span.date")
             if len(date_span) == 0:
                 continue
             year = int(date_span[0].text[-4:])
-            rank = int(book.select('div.rank > span')[0].text)
-            rating = float(book.select('span.our-rating')[0].text)
+            rank = int(book.select("div.rank > span")[0].text)
+            rating = float(book.select("span.our-rating")[0].text)
         except AttributeError:
             continue
-        books.append(Book(title=title,
-                          author=author,
-                          year=year,
-                          rank=rank,
-                          rating=rating
-                          ))
+        books.append(
+            Book(title=title, author=author, year=year, rank=rank, rating=rating)
+        )
     res = []
-    for n, b in enumerate(sorted(books,
-                                 key=lambda b: (-b.rating,
-                                                b.year,
-                                                b.title.lower(),
-                                                b.author.lower()
-                                                )
-                                 ),
-                          start=1):
+    for n, b in enumerate(
+        sorted(
+            books, key=lambda b: (-b.rating, b.year, b.title.lower(), b.author.lower())
+        ),
+        start=1,
+    ):
         b.rank = n
         res.append(b)
     return res
