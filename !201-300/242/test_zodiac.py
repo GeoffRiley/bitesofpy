@@ -67,8 +67,8 @@ def test_signs_are_mutually_compatible(signs, sgn1, sgn2, result):
     ([11, 21], 'Scorpio'),
     ([11, 22], 'Sagittarius'),
     ([12, 21], 'Sagittarius'),
-    ([12, 22], None),  # should be 'Capricorn' but there's a bug in the code!!
-    ([1, 19], None),  # should be 'Capricorn' but there's a bug in the code!!
+    ([12, 22], 'Capricorn'),  # should be 'Capricorn' but there's a bug in the code!!
+    ([1, 19], 'Capricorn'),  # should be 'Capricorn' but there's a bug in the code!!
     ([1, 20], 'Aquarius'),
     ([2, 18], 'Aquarius'),
     ([2, 19], 'Pisces'),

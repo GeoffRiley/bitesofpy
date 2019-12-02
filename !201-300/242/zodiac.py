@@ -46,5 +46,10 @@ def get_sign_by_date(signs: list, date: datetime) -> str:
         start, end = sign.sun_dates
         start_dt = datetime.strptime(start, '%B %d').replace(year=year)
         end_dt = datetime.strptime(end, '%B %d').replace(year=year)
+        if end_dt < start_dt:
+            if date <= end_dt:
+                start_dt = datetime.strptime(start, '%B %d').replace(year=year-1)
+            else:
+                end_dt = datetime.strptime(end, '%B %d').replace(year=year+1)
         if start_dt <= date <= end_dt:
             return sign.name
