@@ -8,7 +8,7 @@ import pytest
 
 TMP = '/tmp'
 SCRIPT = 'links.py'
-IS_LOCAL = platform.system() == 'Darwin'
+IS_LOCAL = platform.system() in ['Darwin', 'Linux']
 MY_CODE = SCRIPT if IS_LOCAL else path.join(TMP, SCRIPT)
 
 
