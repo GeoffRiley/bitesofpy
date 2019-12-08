@@ -20,6 +20,7 @@ def json_file():
     urlretrieve(URL, PATH)
     return PATH
 
+
 def test_ServiceIPRange():
     serv = ServiceIPRange(
         service='Tester',
@@ -27,6 +28,7 @@ def test_ServiceIPRange():
         cidr=IPv4Network('158.152.1.0/24')
     )
     assert str(serv) == '158.152.1.0/24 is allocated to the Tester service in the Bolton region'
+
 
 def test_parse_ipv4_service_ranges(json_file):
     services = parse_ipv4_service_ranges(json_file)
