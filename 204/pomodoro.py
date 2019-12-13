@@ -1,3 +1,4 @@
+import asyncio
 import time
 
 # ONE_MIN = 60
@@ -105,4 +106,4 @@ async def main(
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
