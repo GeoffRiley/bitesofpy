@@ -26,7 +26,7 @@ async def break_time(delay: Union[int, float], loop: int) -> None:
     """
     _delay = int(delay / ONE_MIN)
     print(f"[{loop}] {time.strftime('%X')} Time for a {_delay} min break!")
-    sleep(delay)
+    await sleep(delay)
 
 
 async def lunch_time(delay: Union[int, float]) -> None:
@@ -36,7 +36,7 @@ async def lunch_time(delay: Union[int, float]) -> None:
     :return: None
     """
     print(f"\n** {time.strftime('%X')} Time for lunch! **")
-    sleep(delay)
+    await sleep(delay)
 
 
 async def work_time(delay: Union[int, float], loop: int) -> None:
@@ -47,7 +47,7 @@ async def work_time(delay: Union[int, float], loop: int) -> None:
     :return: None
     """
     print(f"[{loop}] {time.strftime('%X')} Time to work!")
-    sleep(delay)
+    await sleep(delay)
 
 
 async def session(
