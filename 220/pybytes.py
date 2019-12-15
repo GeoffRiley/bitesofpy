@@ -50,11 +50,11 @@ class PythonBytes:
         """
         return sum(1 for i in self.entries if SPECIAL_GUEST in i.summary_detail.value)
 
-    def _time_to_secs(self,tm: str) -> int:
+    def _time_to_secs(self, tm: str) -> int:
         parts = [int(s) for s in tm.split(':')]
         return (parts[0] * 60 + parts[1]) * 60 + parts[2]
 
-    def _secs_to_time(self,sec: int) -> str:
+    def _secs_to_time(self, sec: int) -> str:
         t, s = divmod(sec, 60)
         h, m = divmod(t, 60)
         return f'{h:02}:{m:02}:{s:02}'
@@ -74,6 +74,6 @@ class PythonBytes:
                 min_t = _t
             elif _t > max_t:
                 max_t = _t
-        return Duration(total_t//len(self.entries),
+        return Duration(total_t // len(self.entries),
                         self._secs_to_time(max_t),
                         self._secs_to_time(min_t))
