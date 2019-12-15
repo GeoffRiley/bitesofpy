@@ -11,7 +11,7 @@ def generate_improved_xmas_tree(rows=10):
     out = [f'{STAR:^{width}}']
     for n in range(rows):
         out.append(f'{LEAF * (n * 2 + 1):^{width}}')
-    trunk = TRUNK * (rows+(1 if rows % 2 == 0 else 0))
+    trunk = TRUNK * (rows + (1 if rows % 2 == 0 else 0))
     out.append(f'{trunk:^{width}}')
     out.append(f'{trunk:^{width}}')
     return '\n'.join(out)
