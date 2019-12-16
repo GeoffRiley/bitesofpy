@@ -1,0 +1,887 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2019 The New York Times Company.  All Rights Reserved.",
+  "num_results": 15,
+  "last_modified": "2019-12-11T23:38:01-05:00",
+  "results": {
+    "list_name": "Hardcover Nonfiction",
+    "list_name_encoded": "hardcover-nonfiction",
+    "bestsellers_date": "2019-12-07",
+    "published_date": "2019-12-22",
+    "published_date_description": "latest",
+    "next_published_date": "",
+    "previous_published_date": "2019-12-15",
+    "display_name": "Hardcover Nonfiction",
+    "normal_list_ends_at": 15,
+    "updated": "WEEKLY",
+    "books": [
+      {
+        "rank": 1,
+        "rank_last_week": 1,
+        "weeks_on_list": 8,
+        "asterisk": 0,
+        "dagger": 0,
+        "primary_isbn10": "1250147603",
+        "primary_isbn13": "9781250147608",
+        "publisher": "Holt",
+        "description": "The multi-award-winning solo artist's first autobiography chronicles his career, relationships and private struggles.",
+        "price": 0,
+        "title": "ME",
+        "author": "Elton John",
+        "contributor": "by Elton John",
+        "contributor_note": "",
+        "book_image": "https:\/\/s1.nyt.com\/du\/books\/images\/9781250147608.jpg",
+        "book_image_width": 322,
+        "book_image_height": 495,
+        "amazon_product_url": "https:\/\/www.amazon.com\/Me-Elton-John-Official-Autobiography\/dp\/1250147603?tag=NYTBS-20",
+        "age_group": "",
+        "book_review_link": "https:\/\/www.nytimes.com\/2019\/10\/10\/books\/review-me-elton-john-memoir.html",
+        "first_chapter_link": "",
+        "sunday_review_link": "",
+        "article_chapter_link": "",
+        "isbns": [
+          {
+            "isbn10": "1250147603",
+            "isbn13": "9781250147608"
+          },
+          {
+            "isbn10": "1250147611",
+            "isbn13": "9781250147615"
+          },
+          {
+            "isbn10": "1250231051",
+            "isbn13": "9781250231055"
+          }
+        ],
+        "buy_links": [
+          {
+            "name": "Amazon",
+            "url": "https:\/\/www.amazon.com\/Me-Elton-John-Official-Autobiography\/dp\/1250147603?tag=NYTBS-20"
+          },
+          {
+            "name": "Apple Books",
+            "url": "http:\/\/du-gae-books-dot-nyt-du-prd.appspot.com\/buy?title=ME&author=Elton+John"
+          },
+          {
+            "name": "Barnes and Noble",
+            "url": "http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781250147608"
+          },
+          {
+            "name": "Local Booksellers",
+            "url": "http:\/\/www.indiebound.org\/book\/9781250147608?aff=NYT"
+          }
+        ],
+        "book_uri": "nyt:\/\/book\/ebe49014-235b-5234-9e22-379abac7bf4d"
+      },
+      {
+        "rank": 2,
+        "rank_last_week": 4,
+        "weeks_on_list": 94,
+        "asterisk": 0,
+        "dagger": 0,
+        "primary_isbn10": "0399590501",
+        "primary_isbn13": "9780399590504",
+        "publisher": "Random House",
+        "description": "The daughter of survivalists, who is kept out of school, educates herself enough to leave home for university.",
+        "price": 0,
+        "title": "EDUCATED",
+        "author": "Tara Westover",
+        "contributor": "by Tara Westover",
+        "contributor_note": "",
+        "book_image": "https:\/\/s1.nyt.com\/du\/books\/images\/9780399590504.jpg",
+        "book_image_width": 328,
+        "book_image_height": 495,
+        "amazon_product_url": "https:\/\/www.amazon.com\/Educated-Memoir-Tara-Westover\/dp\/0399590501?tag=NYTBS-20",
+        "age_group": "",
+        "book_review_link": "https:\/\/www.nytimes.com\/2018\/03\/01\/books\/review\/tara-westover-educated.html",
+        "first_chapter_link": "",
+        "sunday_review_link": "",
+        "article_chapter_link": "",
+        "isbns": [
+          {
+            "isbn10": "0399590501",
+            "isbn13": "9780399590504"
+          },
+          {
+            "isbn10": "039959051X",
+            "isbn13": "9780399590511"
+          },
+          {
+            "isbn10": "0525589988",
+            "isbn13": "9780525589983"
+          },
+          {
+            "isbn10": "0525528059",
+            "isbn13": "9780525528050"
+          }
+        ],
+        "buy_links": [
+          {
+            "name": "Amazon",
+            "url": "https:\/\/www.amazon.com\/Educated-Memoir-Tara-Westover\/dp\/0399590501?tag=NYTBS-20"
+          },
+          {
+            "name": "Apple Books",
+            "url": "http:\/\/du-gae-books-dot-nyt-du-prd.appspot.com\/buy?title=EDUCATED&author=Tara+Westover"
+          },
+          {
+            "name": "Barnes and Noble",
+            "url": "http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780399590504"
+          },
+          {
+            "name": "Local Booksellers",
+            "url": "http:\/\/www.indiebound.org\/book\/9780399590504?aff=NYT"
+          }
+        ],
+        "book_uri": "nyt:\/\/book\/08c80da5-f436-5afd-b925-42fe6f0c28cc"
+      },
+      {
+        "rank": 3,
+        "rank_last_week": 7,
+        "weeks_on_list": 5,
+        "asterisk": 0,
+        "dagger": 0,
+        "primary_isbn10": "0525540539",
+        "primary_isbn13": "9780525540533",
+        "publisher": "Sentinel",
+        "description": "The \"Fox & Friends\u201d host gives an account of the battle against the Mexican Army in 1836.",
+        "price": 0,
+        "title": "SAM HOUSTON AND THE ALAMO AVENGERS",
+        "author": "Brian Kilmeade",
+        "contributor": "by Brian Kilmeade",
+        "contributor_note": "",
+        "book_image": "https:\/\/s1.nyt.com\/du\/books\/images\/9780525540533.jpg",
+        "book_image_width": 328,
+        "book_image_height": 495,
+        "amazon_product_url": "https:\/\/www.amazon.com\/Sam-Houston-Alamo-Avengers-American\/dp\/0525540539?tag=NYTBS-20",
+        "age_group": "",
+        "book_review_link": "",
+        "first_chapter_link": "",
+        "sunday_review_link": "",
+        "article_chapter_link": "",
+        "isbns": [
+          {
+            "isbn10": "0525540539",
+            "isbn13": "9780525540533"
+          },
+          {
+            "isbn10": "0593152271",
+            "isbn13": "9780593152270"
+          }
+        ],
+        "buy_links": [
+          {
+            "name": "Amazon",
+            "url": "https:\/\/www.amazon.com\/Sam-Houston-Alamo-Avengers-American\/dp\/0525540539?tag=NYTBS-20"
+          },
+          {
+            "name": "Apple Books",
+            "url": "http:\/\/du-gae-books-dot-nyt-du-prd.appspot.com\/buy?title=SAM+HOUSTON+AND+THE+ALAMO+AVENGERS&author=Brian+Kilmeade"
+          },
+          {
+            "name": "Barnes and Noble",
+            "url": "http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780525540533"
+          },
+          {
+            "name": "Local Booksellers",
+            "url": "http:\/\/www.indiebound.org\/book\/9780525540533?aff=NYT"
+          }
+        ],
+        "book_uri": "nyt:\/\/book\/f5b86e00-711b-5f29-8e08-22a25822be9f"
+      },
+      {
+        "rank": 4,
+        "rank_last_week": 8,
+        "weeks_on_list": 52,
+        "asterisk": 0,
+        "dagger": 0,
+        "primary_isbn10": "1524763136",
+        "primary_isbn13": "9781524763138",
+        "publisher": "Crown",
+        "description": "The former first lady describes how she balanced work, family and her husband\u2019s political ascent.",
+        "price": 0,
+        "title": "BECOMING",
+        "author": "Michelle Obama",
+        "contributor": "by Michelle Obama",
+        "contributor_note": "",
+        "book_image": "https:\/\/s1.nyt.com\/du\/books\/images\/9781524763138.jpg",
+        "book_image_width": 326,
+        "book_image_height": 495,
+        "amazon_product_url": "https:\/\/www.amazon.com\/Becoming-Michelle-Obama\/dp\/1524763136?tag=NYTBS-20",
+        "age_group": "",
+        "book_review_link": "https:\/\/www.nytimes.com\/2018\/12\/06\/books\/review\/michelle-obama-becoming-memoir.html",
+        "first_chapter_link": "",
+        "sunday_review_link": "",
+        "article_chapter_link": "",
+        "isbns": [
+          {
+            "isbn10": "1524763136",
+            "isbn13": "9781524763138"
+          },
+          {
+            "isbn10": "0525633677",
+            "isbn13": "9780525633679"
+          }
+        ],
+        "buy_links": [
+          {
+            "name": "Amazon",
+            "url": "https:\/\/www.amazon.com\/Becoming-Michelle-Obama\/dp\/1524763136?tag=NYTBS-20"
+          },
+          {
+            "name": "Apple Books",
+            "url": "http:\/\/du-gae-books-dot-nyt-du-prd.appspot.com\/buy?title=BECOMING&author=Michelle+Obama"
+          },
+          {
+            "name": "Barnes and Noble",
+            "url": "http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781524763138"
+          },
+          {
+            "name": "Local Booksellers",
+            "url": "http:\/\/www.indiebound.org\/book\/9781524763138?aff=NYT"
+          }
+        ],
+        "book_uri": "nyt:\/\/book\/2892bc2e-4ad3-5e0a-bc6e-d2cd983c3c52"
+      },
+      {
+        "rank": 5,
+        "rank_last_week": 6,
+        "weeks_on_list": 13,
+        "asterisk": 0,
+        "dagger": 0,
+        "primary_isbn10": "0316478520",
+        "primary_isbn13": "9780316478526",
+        "publisher": "Little, Brown",
+        "description": "Famous examples of miscommunication serve as the backdrop to explain potential conflicts and misunderstandings.",
+        "price": 0,
+        "title": "TALKING TO STRANGERS",
+        "author": "Malcolm Gladwell",
+        "contributor": "by Malcolm Gladwell",
+        "contributor_note": "",
+        "book_image": "https:\/\/s1.nyt.com\/du\/books\/images\/9780316478526.jpg",
+        "book_image_width": 330,
+        "book_image_height": 491,
+        "amazon_product_url": "https:\/\/www.amazon.com\/Talking-Strangers-Should-about-People\/dp\/0316478520?tag=NYTBS-20",
+        "age_group": "",
+        "book_review_link": "https:\/\/www.nytimes.com\/2019\/09\/04\/books\/review-talking-to-strangers-malcolm-gladwell.html",
+        "first_chapter_link": "",
+        "sunday_review_link": "",
+        "article_chapter_link": "",
+        "isbns": [
+          {
+            "isbn10": "0316478520",
+            "isbn13": "9780316478526"
+          },
+          {
+            "isbn10": "0316535575",
+            "isbn13": "9780316535571"
+          },
+          {
+            "isbn10": "0316535621",
+            "isbn13": "9780316535625"
+          },
+          {
+            "isbn10": "1549150340",
+            "isbn13": "9781549150340"
+          },
+          {
+            "isbn10": "1549150332",
+            "isbn13": "9781549150333"
+          },
+          {
+            "isbn10": "1549100025",
+            "isbn13": "9781549100024"
+          },
+          {
+            "isbn10": "1549100017",
+            "isbn13": "9781549100017"
+          }
+        ],
+        "buy_links": [
+          {
+            "name": "Amazon",
+            "url": "https:\/\/www.amazon.com\/Talking-Strangers-Should-about-People\/dp\/0316478520?tag=NYTBS-20"
+          },
+          {
+            "name": "Apple Books",
+            "url": "http:\/\/du-gae-books-dot-nyt-du-prd.appspot.com\/buy?title=TALKING+TO+STRANGERS&author=Malcolm+Gladwell"
+          },
+          {
+            "name": "Barnes and Noble",
+            "url": "http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780316478526"
+          },
+          {
+            "name": "Local Booksellers",
+            "url": "http:\/\/www.indiebound.org\/book\/9780316478526?aff=NYT"
+          }
+        ],
+        "book_uri": "nyt:\/\/book\/b3a4a570-37de-54bd-97de-8dbd6775a663"
+      },
+      {
+        "rank": 6,
+        "rank_last_week": 2,
+        "weeks_on_list": 3,
+        "asterisk": 0,
+        "dagger": 0,
+        "primary_isbn10": "1538718464",
+        "primary_isbn13": "9781538718469",
+        "publisher": "Twelve",
+        "description": "A senior official in the Trump administration offers an assessment of the president and makes a moral appeal.",
+        "price": 0,
+        "title": "A WARNING",
+        "author": "Anonymous",
+        "contributor": "by Anonymous",
+        "contributor_note": "",
+        "book_image": "https:\/\/s1.nyt.com\/du\/books\/images\/9781538718469.jpg",
+        "book_image_width": 328,
+        "book_image_height": 495,
+        "amazon_product_url": "https:\/\/www.amazon.com\/Warning\/dp\/1538718464?tag=NYTBS-20",
+        "age_group": "",
+        "book_review_link": "https:\/\/www.nytimes.com\/2019\/11\/07\/books\/review\/a-warning-anonymous-book-review-trump.html",
+        "first_chapter_link": "",
+        "sunday_review_link": "",
+        "article_chapter_link": "",
+        "isbns": [
+          {
+            "isbn10": "1538718464",
+            "isbn13": "9781538718469"
+          },
+          {
+            "isbn10": "1538718472",
+            "isbn13": "9781538718476"
+          },
+          {
+            "isbn10": "1549185721",
+            "isbn13": "9781549185724"
+          },
+          {
+            "isbn10": "1549130382",
+            "isbn13": "9781549130380"
+          }
+        ],
+        "buy_links": [
+          {
+            "name": "Amazon",
+            "url": "https:\/\/www.amazon.com\/Warning\/dp\/1538718464?tag=NYTBS-20"
+          },
+          {
+            "name": "Apple Books",
+            "url": "http:\/\/du-gae-books-dot-nyt-du-prd.appspot.com\/buy?title=A+WARNING&author=Anonymous"
+          },
+          {
+            "name": "Barnes and Noble",
+            "url": "http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781538718469"
+          },
+          {
+            "name": "Local Booksellers",
+            "url": "http:\/\/www.indiebound.org\/book\/9781538718469?aff=NYT"
+          }
+        ],
+        "book_uri": "nyt:\/\/book\/d1c6c03d-0179-5601-8d48-6bc61e68c359"
+      },
+      {
+        "rank": 7,
+        "rank_last_week": 0,
+        "weeks_on_list": 8,
+        "asterisk": 0,
+        "dagger": 0,
+        "primary_isbn10": "1501178415",
+        "primary_isbn13": "9781501178412",
+        "publisher": "Simon & Schuster",
+        "description": "Profiles of women from around the world who have blazed trails and challenged the status quo.",
+        "price": 0,
+        "title": "THE BOOK OF GUTSY WOMEN",
+        "author": "Hillary Rodham Clinton and Chelsea Clinton",
+        "contributor": "by Hillary Rodham Clinton and Chelsea Clinton",
+        "contributor_note": "",
+        "book_image": "https:\/\/s1.nyt.com\/du\/books\/images\/9781501178412.jpg",
+        "book_image_width": 330,
+        "book_image_height": 413,
+        "amazon_product_url": "https:\/\/www.amazon.com\/Book-Gutsy-Women-Favorite-Stories-Resilience\/dp\/1501178415?tag=NYTBS-20",
+        "age_group": "",
+        "book_review_link": "",
+        "first_chapter_link": "",
+        "sunday_review_link": "",
+        "article_chapter_link": "",
+        "isbns": [
+          {
+            "isbn10": "1501178415",
+            "isbn13": "9781501178412"
+          },
+          {
+            "isbn10": "1501178431",
+            "isbn13": "9781501178436"
+          },
+          {
+            "isbn10": "1432872079",
+            "isbn13": "9781432872076"
+          }
+        ],
+        "buy_links": [
+          {
+            "name": "Amazon",
+            "url": "https:\/\/www.amazon.com\/Book-Gutsy-Women-Favorite-Stories-Resilience\/dp\/1501178415?tag=NYTBS-20"
+          },
+          {
+            "name": "Apple Books",
+            "url": "http:\/\/du-gae-books-dot-nyt-du-prd.appspot.com\/buy?title=THE+BOOK+OF+GUTSY+WOMEN&author=Hillary+Rodham+Clinton+and+Chelsea+Clinton"
+          },
+          {
+            "name": "Barnes and Noble",
+            "url": "http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781501178412"
+          },
+          {
+            "name": "Local Booksellers",
+            "url": "http:\/\/www.indiebound.org\/book\/9781501178412?aff=NYT"
+          }
+        ],
+        "book_uri": "nyt:\/\/book\/a23242c5-307c-5f8c-aff8-8c000ae9a58c"
+      },
+      {
+        "rank": 8,
+        "rank_last_week": 10,
+        "weeks_on_list": 8,
+        "asterisk": 0,
+        "dagger": 0,
+        "primary_isbn10": "0385539304",
+        "primary_isbn13": "9780385539302",
+        "publisher": "Doubleday",
+        "description": "An owner\u2019s manual of the human body covering various parts, functions and what happens when things go wrong.",
+        "price": 0,
+        "title": "THE BODY",
+        "author": "Bill Bryson",
+        "contributor": "by Bill Bryson",
+        "contributor_note": "",
+        "book_image": "https:\/\/s1.nyt.com\/du\/books\/images\/9780385539302.jpg",
+        "book_image_width": 330,
+        "book_image_height": 482,
+        "amazon_product_url": "https:\/\/www.amazon.com\/Body-Guide-Occupants-Bill-Bryson\/dp\/0385539304?tag=NYTBS-20",
+        "age_group": "",
+        "book_review_link": "https:\/\/www.nytimes.com\/2019\/10\/15\/books\/review\/the-body-a-guide-for-occupants-bill-bryson.html",
+        "first_chapter_link": "",
+        "sunday_review_link": "",
+        "article_chapter_link": "",
+        "isbns": [
+          {
+            "isbn10": "0385539304",
+            "isbn13": "9780385539302"
+          },
+          {
+            "isbn10": "0385539312",
+            "isbn13": "9780385539319"
+          },
+          {
+            "isbn10": "0147526914",
+            "isbn13": "9780147526915"
+          }
+        ],
+        "buy_links": [
+          {
+            "name": "Amazon",
+            "url": "https:\/\/www.amazon.com\/Body-Guide-Occupants-Bill-Bryson\/dp\/0385539304?tag=NYTBS-20"
+          },
+          {
+            "name": "Apple Books",
+            "url": "http:\/\/du-gae-books-dot-nyt-du-prd.appspot.com\/buy?title=THE+BODY&author=Bill+Bryson"
+          },
+          {
+            "name": "Barnes and Noble",
+            "url": "http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780385539302"
+          },
+          {
+            "name": "Local Booksellers",
+            "url": "http:\/\/www.indiebound.org\/book\/9780385539302?aff=NYT"
+          }
+        ],
+        "book_uri": "nyt:\/\/book\/c8aa4361-42d0-5160-90ae-f02eaa06a4cf"
+      },
+      {
+        "rank": 9,
+        "rank_last_week": 5,
+        "weeks_on_list": 5,
+        "asterisk": 0,
+        "dagger": 1,
+        "primary_isbn10": "154608603X",
+        "primary_isbn13": "9781546086031",
+        "publisher": "Center Street",
+        "description": "Forays into politics and views on liberals from the executive vice president of the Trump Organization.",
+        "price": 0,
+        "title": "TRIGGERED",
+        "author": "Donald Trump Jr",
+        "contributor": "by Donald Trump Jr",
+        "contributor_note": "",
+        "book_image": "https:\/\/s1.nyt.com\/du\/books\/images\/9781546086031.jpg",
+        "book_image_width": 329,
+        "book_image_height": 495,
+        "amazon_product_url": "https:\/\/www.amazon.com\/Triggered-Left-Thrives-Wants-Silence\/dp\/154608603X?tag=NYTBS-20",
+        "age_group": "",
+        "book_review_link": "",
+        "first_chapter_link": "",
+        "sunday_review_link": "",
+        "article_chapter_link": "",
+        "isbns": [
+          {
+            "isbn10": "154608603X",
+            "isbn13": "9781546086031"
+          },
+          {
+            "isbn10": "1546086021",
+            "isbn13": "9781546086024"
+          },
+          {
+            "isbn10": "1549155245",
+            "isbn13": "9781549155246"
+          }
+        ],
+        "buy_links": [
+          {
+            "name": "Amazon",
+            "url": "https:\/\/www.amazon.com\/Triggered-Left-Thrives-Wants-Silence\/dp\/154608603X?tag=NYTBS-20"
+          },
+          {
+            "name": "Apple Books",
+            "url": "http:\/\/du-gae-books-dot-nyt-du-prd.appspot.com\/buy?title=TRIGGERED&author=Donald+Trump+Jr"
+          },
+          {
+            "name": "Barnes and Noble",
+            "url": "http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781546086031"
+          },
+          {
+            "name": "Local Booksellers",
+            "url": "http:\/\/www.indiebound.org\/book\/9781546086031?aff=NYT"
+          }
+        ],
+        "book_uri": "nyt:\/\/book\/13733183-8697-564d-94bb-5792f5c8f312"
+      },
+      {
+        "rank": 10,
+        "rank_last_week": 9,
+        "weeks_on_list": 5,
+        "asterisk": 0,
+        "dagger": 0,
+        "primary_isbn10": "0062952390",
+        "primary_isbn13": "9780062952394",
+        "publisher": "Harper",
+        "description": "Lessons learned by the Alboms when they bring a Haitian orphan with a life-threatening illness into their family.",
+        "price": 0,
+        "title": "FINDING CHIKA",
+        "author": "Mitch Albom",
+        "contributor": "by Mitch Albom",
+        "contributor_note": "",
+        "book_image": "https:\/\/s1.nyt.com\/du\/books\/images\/9780062952394.jpg",
+        "book_image_width": 330,
+        "book_image_height": 478,
+        "amazon_product_url": "https:\/\/www.amazon.com\/Finding-Chika-Little-Earthquake-Making\/dp\/0062952390?tag=NYTBS-20",
+        "age_group": "",
+        "book_review_link": "",
+        "first_chapter_link": "",
+        "sunday_review_link": "",
+        "article_chapter_link": "",
+        "isbns": [
+          {
+            "isbn10": "0062952390",
+            "isbn13": "9780062952394"
+          },
+          {
+            "isbn10": "0062952412",
+            "isbn13": "9780062952417"
+          }
+        ],
+        "buy_links": [
+          {
+            "name": "Amazon",
+            "url": "https:\/\/www.amazon.com\/Finding-Chika-Little-Earthquake-Making\/dp\/0062952390?tag=NYTBS-20"
+          },
+          {
+            "name": "Apple Books",
+            "url": "http:\/\/du-gae-books-dot-nyt-du-prd.appspot.com\/buy?title=FINDING+CHIKA&author=Mitch+Albom"
+          },
+          {
+            "name": "Barnes and Noble",
+            "url": "http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780062952394"
+          },
+          {
+            "name": "Local Booksellers",
+            "url": "http:\/\/www.indiebound.org\/book\/9780062952394?aff=NYT"
+          }
+        ],
+        "book_uri": "nyt:\/\/book\/73baad54-4804-5e05-9aab-0276b2d6ae71"
+      },
+      {
+        "rank": 11,
+        "rank_last_week": 14,
+        "weeks_on_list": 10,
+        "asterisk": 0,
+        "dagger": 0,
+        "primary_isbn10": "0525575472",
+        "primary_isbn13": "9780525575474",
+        "publisher": "Crown",
+        "description": "The MSNBC host argues that the global oil and gas industry has weakened democracies and bolstered authoritarians.",
+        "price": 0,
+        "title": "BLOWOUT",
+        "author": "Rachel Maddow",
+        "contributor": "by Rachel Maddow",
+        "contributor_note": "",
+        "book_image": "https:\/\/s1.nyt.com\/du\/books\/images\/9780525575474.jpg",
+        "book_image_width": 328,
+        "book_image_height": 495,
+        "amazon_product_url": "https:\/\/www.amazon.com\/Blowout-Corrupted-Democracy-Destructive-Industry\/dp\/0525575472?tag=NYTBS-20",
+        "age_group": "",
+        "book_review_link": "https:\/\/www.nytimes.com\/2019\/10\/30\/books\/review\/blowout-rachel-maddow.html",
+        "first_chapter_link": "",
+        "sunday_review_link": "",
+        "article_chapter_link": "",
+        "isbns": [
+          {
+            "isbn10": "0525575472",
+            "isbn13": "9780525575474"
+          }
+        ],
+        "buy_links": [
+          {
+            "name": "Amazon",
+            "url": "https:\/\/www.amazon.com\/Blowout-Corrupted-Democracy-Destructive-Industry\/dp\/0525575472?tag=NYTBS-20"
+          },
+          {
+            "name": "Apple Books",
+            "url": "http:\/\/du-gae-books-dot-nyt-du-prd.appspot.com\/buy?title=BLOWOUT&author=Rachel+Maddow"
+          },
+          {
+            "name": "Barnes and Noble",
+            "url": "http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780525575474"
+          },
+          {
+            "name": "Local Booksellers",
+            "url": "http:\/\/www.indiebound.org\/book\/9780525575474?aff=NYT"
+          }
+        ],
+        "book_uri": "nyt:\/\/book\/794cf276-a10a-5253-b4e5-7882a04515bc"
+      },
+      {
+        "rank": 12,
+        "rank_last_week": 11,
+        "weeks_on_list": 3,
+        "asterisk": 0,
+        "dagger": 0,
+        "primary_isbn10": "0316349259",
+        "primary_isbn13": "9780316349253",
+        "publisher": "Hachette",
+        "description": "The musical theater icon's second installment of her memoir describes her arrival in Hollywood, becoming a mother and her relationship with Blake Edwards.",
+        "price": 0,
+        "title": "HOME WORK",
+        "author": "Julie Andrews with Emma Walton Hamilton",
+        "contributor": "by Julie Andrews with Emma Walton Hamilton",
+        "contributor_note": "",
+        "book_image": "https:\/\/s1.nyt.com\/du\/books\/images\/9780316349253.jpg",
+        "book_image_width": 328,
+        "book_image_height": 495,
+        "amazon_product_url": "https:\/\/www.amazon.com\/Home-Work-Memoir-Hollywood-Years\/dp\/0316349259?tag=NYTBS-20",
+        "age_group": "",
+        "book_review_link": "",
+        "first_chapter_link": "",
+        "sunday_review_link": "",
+        "article_chapter_link": "",
+        "isbns": [
+          {
+            "isbn10": "None",
+            "isbn13": "9780143177289"
+          },
+          {
+            "isbn10": "0316349259",
+            "isbn13": "9780316349253"
+          },
+          {
+            "isbn10": "0306845989",
+            "isbn13": "9780306845987"
+          }
+        ],
+        "buy_links": [
+          {
+            "name": "Amazon",
+            "url": "https:\/\/www.amazon.com\/Home-Work-Memoir-Hollywood-Years\/dp\/0316349259?tag=NYTBS-20"
+          },
+          {
+            "name": "Apple Books",
+            "url": "http:\/\/du-gae-books-dot-nyt-du-prd.appspot.com\/buy?title=HOME+WORK&author=Julie+Andrews+with+Emma+Walton+Hamilton"
+          },
+          {
+            "name": "Barnes and Noble",
+            "url": "http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780316349253"
+          },
+          {
+            "name": "Local Booksellers",
+            "url": "http:\/\/www.indiebound.org\/book\/9780316349253?aff=NYT"
+          }
+        ],
+        "book_uri": "nyt:\/\/book\/641e69b0-eee1-53d2-b693-85fb67cf5ada"
+      },
+      {
+        "rank": 13,
+        "rank_last_week": 12,
+        "weeks_on_list": 6,
+        "asterisk": 0,
+        "dagger": 0,
+        "primary_isbn10": "0399589651",
+        "primary_isbn13": "9780399589652",
+        "publisher": "Spiegel & Grau",
+        "description": "A memoir by the musician written before his death, with photos and other memorabilia showing his evolution.",
+        "price": 0,
+        "title": "THE BEAUTIFUL ONES",
+        "author": "Prince",
+        "contributor": "by Prince. Edited by Dan Piepenbring",
+        "contributor_note": "Edited by Dan Piepenbring",
+        "book_image": "https:\/\/s1.nyt.com\/du\/books\/images\/9780399589652.jpg",
+        "book_image_width": 325,
+        "book_image_height": 495,
+        "amazon_product_url": "https:\/\/www.amazon.com\/Beautiful-Ones-Prince\/dp\/0399589651?tag=NYTBS-20",
+        "age_group": "",
+        "book_review_link": "",
+        "first_chapter_link": "",
+        "sunday_review_link": "",
+        "article_chapter_link": "",
+        "isbns": [
+          {
+            "isbn10": "0399589651",
+            "isbn13": "9780399589652"
+          },
+          {
+            "isbn10": "039958966X",
+            "isbn13": "9780399589669"
+          }
+        ],
+        "buy_links": [
+          {
+            "name": "Amazon",
+            "url": "https:\/\/www.amazon.com\/Beautiful-Ones-Prince\/dp\/0399589651?tag=NYTBS-20"
+          },
+          {
+            "name": "Apple Books",
+            "url": "http:\/\/du-gae-books-dot-nyt-du-prd.appspot.com\/buy?title=THE+BEAUTIFUL+ONES&author=Prince"
+          },
+          {
+            "name": "Barnes and Noble",
+            "url": "http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780399589652"
+          },
+          {
+            "name": "Local Booksellers",
+            "url": "http:\/\/www.indiebound.org\/book\/9780399589652?aff=NYT"
+          }
+        ],
+        "book_uri": "nyt:\/\/book\/389ae0ca-c01e-5177-ab2f-69adc826ef99"
+      },
+      {
+        "rank": 14,
+        "rank_last_week": 0,
+        "weeks_on_list": 8,
+        "asterisk": 0,
+        "dagger": 0,
+        "primary_isbn10": "125023722X",
+        "primary_isbn13": "9781250237224",
+        "publisher": "Holt",
+        "description": "The conservative commentator weaves interviews and personal history to portray the power and influence of the 45th president.",
+        "price": 0,
+        "title": "THE UNITED STATES OF TRUMP",
+        "author": "Bill O'Reilly",
+        "contributor": "by Bill O'Reilly",
+        "contributor_note": "",
+        "book_image": "https:\/\/s1.nyt.com\/du\/books\/images\/9781250237224.jpg",
+        "book_image_width": 326,
+        "book_image_height": 495,
+        "amazon_product_url": "https:\/\/www.amazon.com\/United-States-Trump-President-America\/dp\/125023722X?tag=NYTBS-20",
+        "age_group": "",
+        "book_review_link": "",
+        "first_chapter_link": "",
+        "sunday_review_link": "",
+        "article_chapter_link": "",
+        "isbns": [
+          {
+            "isbn10": "125023722X",
+            "isbn13": "9781250237224"
+          },
+          {
+            "isbn10": "1250237211",
+            "isbn13": "9781250237217"
+          },
+          {
+            "isbn10": "1250262372",
+            "isbn13": "9781250262370"
+          }
+        ],
+        "buy_links": [
+          {
+            "name": "Amazon",
+            "url": "https:\/\/www.amazon.com\/United-States-Trump-President-America\/dp\/125023722X?tag=NYTBS-20"
+          },
+          {
+            "name": "Apple Books",
+            "url": "http:\/\/du-gae-books-dot-nyt-du-prd.appspot.com\/buy?title=THE+UNITED+STATES+OF+TRUMP&author=Bill+O%27Reilly"
+          },
+          {
+            "name": "Barnes and Noble",
+            "url": "http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781250237224"
+          },
+          {
+            "name": "Local Booksellers",
+            "url": "http:\/\/www.indiebound.org\/book\/9781250237224?aff=NYT"
+          }
+        ],
+        "book_uri": "nyt:\/\/book\/c35a6021-e395-551a-9aba-012b36db30e1"
+      },
+      {
+        "rank": 15,
+        "rank_last_week": 15,
+        "weeks_on_list": 6,
+        "asterisk": 0,
+        "dagger": 0,
+        "primary_isbn10": "1982130857",
+        "primary_isbn13": "9781982130855",
+        "publisher": "Gallery",
+        "description": "The television personality relays stories from his podcast and personal anecdotes.",
+        "price": 0,
+        "title": "THE WAY I HEARD IT",
+        "author": "Mike Rowe",
+        "contributor": "by Mike Rowe",
+        "contributor_note": "",
+        "book_image": "https:\/\/s1.nyt.com\/du\/books\/images\/9781982130855.jpg",
+        "book_image_width": 328,
+        "book_image_height": 495,
+        "amazon_product_url": "https:\/\/www.amazon.com\/Way-I-Heard-Mike-Rowe\/dp\/1982130857?tag=NYTBS-20",
+        "age_group": "",
+        "book_review_link": "",
+        "first_chapter_link": "",
+        "sunday_review_link": "",
+        "article_chapter_link": "",
+        "isbns": [
+          {
+            "isbn10": "1982130857",
+            "isbn13": "9781982130855"
+          },
+          {
+            "isbn10": "1982130865",
+            "isbn13": "9781982130862"
+          }
+        ],
+        "buy_links": [
+          {
+            "name": "Amazon",
+            "url": "https:\/\/www.amazon.com\/Way-I-Heard-Mike-Rowe\/dp\/1982130857?tag=NYTBS-20"
+          },
+          {
+            "name": "Apple Books",
+            "url": "http:\/\/du-gae-books-dot-nyt-du-prd.appspot.com\/buy?title=THE+WAY+I+HEARD+IT&author=Mike+Rowe"
+          },
+          {
+            "name": "Barnes and Noble",
+            "url": "http:\/\/www.anrdoezrs.net\/click-7990613-11819508?url=http%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781982130855"
+          },
+          {
+            "name": "Local Booksellers",
+            "url": "http:\/\/www.indiebound.org\/book\/9781982130855?aff=NYT"
+          }
+        ],
+        "book_uri": "nyt:\/\/book\/2cce8ad1-631f-5c39-8a51-8fa5a7040d97"
+      }
+    ],
+    "corrections": []
+  }
+}
