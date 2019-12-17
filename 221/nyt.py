@@ -1,4 +1,5 @@
 import json
+from operator import itemgetter
 from os.path import exists
 
 import requests
@@ -28,11 +29,11 @@ def get_best_seller_titles(url=URL_NON_FICTION):
     """
     if exists('input.json'):
         with open('input.json') as f:
-            text = f.read()
+            js = json.load(f)
     else:
-        text = requests.get(url)
-    js = json.loads(text)
-    return [(v['title'], v['weeks_on_list']) for v in js['results']['books']]
+        js = requests.get(url).json()
+
+    return sorted([(v['title'], v['weeks_on_list']) for v in js['results']['books']], key=itemgetter(1), reverse=True)
 
 
 if __name__ == '__main__':
