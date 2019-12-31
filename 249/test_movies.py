@@ -3,7 +3,7 @@ import os
 import pytest
 from movies import MovieDb
 
-DB = os.path.join(os.getenv("TMP", "/tmp"), 'movies.db')
+DB = os.path.join(os.getenv("TMP", "/tmp"), 'movies_gir.db')
 # https://www.imdb.com/list/ls055592025/
 DATA = [
     ("The Godfather", 1972, 9.2),
@@ -20,11 +20,13 @@ DATA = [
 TABLE = 'movies'
 
 
-@pytest.fixture(scope='module')
+@pytest.fixture(scope='session')
 def db():
     # instantiate MovieDb class using above constants
     # do proper setup / teardown using MovieDb methods
     # https://docs.pytest.org/en/latest/fixture.html (hint: yield)
+    if os.path.exists(DB):
+        os.remove(DB)
     movies = MovieDb(DB, DATA, TABLE)
     movies.init()
 
@@ -34,11 +36,17 @@ def db():
 
 
 # write tests for all MovieDb's query / add / delete
-def test_query(db):
+def test_query_title(db):
     assert len(db.query(title='godfather')) == 1
     assert len(db.query(title='the')) == 5
     assert db.query(title='Arabia')[0][2] == 1962
+
+
+def test_query_year(db):
     assert db.query(year=1942)[0][1] == 'Casablanca'
+
+
+def test_query_score_gt(db):
     assert len(db.query(score_gt=9.2)) == 1
 
 
