@@ -1,8 +1,7 @@
 from unittest.mock import patch
 
-import pytest
-
 import color
+import pytest
 
 
 @pytest.fixture(scope="module")
