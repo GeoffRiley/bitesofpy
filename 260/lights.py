@@ -139,8 +139,8 @@ class LightsGrid:
 
 # Main function that can be used to test the Class methods
 if __name__ == "__main__":
-    with open("./instructions.txt", "r") as f:
-        instructions_str = f.read()
+    # with open("./instructions.txt", "r") as f:
+    #     instructions_str = f.read()
 
     instructions = """create grid of length 100
     turn on 46,55 through 56,90
