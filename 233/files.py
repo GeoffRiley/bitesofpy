@@ -17,4 +17,3 @@ def zip_last_n_files(directory: PosixPath = LOG_DIR,
     with ZipFile(zip_file, 'w') as zippery:
         for t, f in file_list[-n:]:
             zippery.write(f, f'{f.stem}_{datetime.fromtimestamp(t).strftime("%Y-%m-%d")}.log')
-            # f'{f.stem}-{datetime.fromtimestamp(s.st_ctime).strftime("%Y-%m-%d")}.log'
