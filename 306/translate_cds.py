@@ -16,4 +16,4 @@ def translate_cds(cds: str, translation_table: str) -> str:
     # …and translate!
     translated = Seq.translate(seq, translation_table, cds=True)
 
-    return translated
+    return str(translated)
