@@ -1,7 +1,5 @@
 import pandas as pd
 import pytest
-from pandas._testing import assert_frame_equal
-
 from clean_text import (strip_url_email,
                         to_lowercase,
                         strip_stopwords,
@@ -9,6 +7,7 @@ from clean_text import (strip_url_email,
                         strip_digits_punctuation,
                         get_tdidf,
                         TMP)
+from pandas._testing import assert_frame_equal
 
 df_samples = pd.read_pickle(TMP / "samples.pkl")
 
