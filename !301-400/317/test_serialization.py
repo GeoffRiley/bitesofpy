@@ -1,5 +1,5 @@
-from datetime import date
 import time
+from datetime import date
 from typing import NamedTuple
 
 from serialization import (download_pickle_file,
