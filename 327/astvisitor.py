@@ -1,7 +1,6 @@
 import ast
 import builtins
 from collections import defaultdict
-from pprint import pp
 from typing import List, Dict
 
 
@@ -18,9 +17,12 @@ class AstVisitor(ast.NodeVisitor):
         super().__init__()
         self.all_builtins = set(dir(builtins))
 
-        self._builtins = defaultdict(str)
-        self._modules = defaultdict(str)
-        self._tree = code if code is None else self.parse(code)
+        self._modules = set()
+        self._alias = defaultdict(str)
+        self._functions = defaultdict(str)
+        self._call_lines = defaultdict(set)
+        if code is not None:
+            self.parse(code)
 
     def parse(self, code: str) -> ast.Module:
         """Parse input code into an AST tree"""
@@ -30,26 +32,34 @@ class AstVisitor(ast.NodeVisitor):
 
     def visit_Import(self, node: ast.AST) -> None:
         """Parse an ast.Import node"""
-        print(f'Import {node.names}')
-        pp(node)
-
-        ##########################################################
-        # add your logic to track import statements
-        # note1: watch out for aliasing ;)
-        ##########################################################
+        names = []
+        # line = node.lineno
+        for name in node.names:
+            if name.asname:
+                names.append(f'{name.name} as {name.asname}')
+                self._alias[name.asname] = name.name
+            else:
+                names.append(name.name)
+            self._modules.add(name.name)
+        # print(f'Import {",".join(names)} @ {line}')
 
         # do not remove this
         self.generic_visit(node)
 
     def visit_ImportFrom(self, node: ast.AST) -> None:
         """Parse an ast.ImportFrom node"""
-        print(f'Import from {node.module}')
-        pp(node)
-
-        ##########################################################
-        # add your logic to track from/import statements
-        # note: watch out for aliasing ;)
-        ##########################################################
+        module = node.module
+        # line = node.lineno
+        names = []
+        for name in node.names:
+            if name.asname:
+                names.append(f'{name.name} as {name.asname}')
+                self._alias[name.asname] = name.name
+            else:
+                names.append(f'{module}.{name.name}')
+                self._functions[name.name] = f'{module}.{name.name}'
+        self._modules.add(f'{module}')
+        # print(f'From {module} Import {".".join(names)} @ {line}')
 
         # do not remove this
         self.generic_visit(node)
@@ -57,16 +67,24 @@ class AstVisitor(ast.NodeVisitor):
     def visit_Call(self, node: ast.AST) -> None:
         """Parse an ast.Call node"""
         fn = node.func
+        line = fn.lineno
         if isinstance(fn, ast.Name):
-            print(f'Call: {fn.id}')
+            name = fn.id
         else:
-            print(f'Call: {fn.attr}')
-        pp(node)
-        ##########################################################
-        # add your logic to track call statements
-        # note1: watch out for aliasing ;)
-        # note2: watch out for submodule naming such as module.submodule.submodule.func() ;)
-        ##########################################################
+            name = fn.attr
+            inside = fn.value
+            while not isinstance(inside, ast.Name):
+                name = f'{inside.attr}.{name}'
+                inside = inside.value
+            name = f'{inside.id}.{name}'
+
+        if name in self._functions:
+            name = self._functions[name]
+        parts = name.split('.', 1)
+        if len(parts) > 1 and parts[0] in self._alias:
+            name = f'{self._alias[parts[0]]}.{parts[1]}'
+        self._call_lines[name].add(line)
+        # print(f'Call: {name}() @ {line}')
 
         # do not remove this
         self.generic_visit(node)
@@ -78,7 +96,20 @@ class AstVisitor(ast.NodeVisitor):
         ------
         - valid: optional list of builtins to search for
         """
-        pass
+        result = set(self._call_lines.keys()).intersection(self.all_builtins)
+        if valid:
+            result = result.intersection(set(valid))
+        return list(result)
+
+    def _resolve_alias(self, name: str) -> str:
+        if name in self._alias:
+            return self._alias[name]
+        return name
+
+    def _resolve_alias_list(self, names: List[str]) -> List[str]:
+        if names:
+            return [self._resolve_alias(s) for s in names]
+        return None
 
     def builtins_lineno(self, valid: List[str] = None) -> Dict[str, List[int]]:
         """Return a dictionary mapping builtins to line numbers
@@ -87,7 +118,9 @@ class AstVisitor(ast.NodeVisitor):
         ------
         - valid: optional list of builtins to search for
         """
-        pass
+        builtin_list = self.builtins(self._resolve_alias_list(valid))
+        result = {b: list(self._call_lines[b]) for b in builtin_list}
+        return result
 
     def modules(self, valid: List[str] = None) -> List[str]:
         """Return a dictionary mapping module calls to line numbers, with:
@@ -98,16 +131,28 @@ class AstVisitor(ast.NodeVisitor):
         ------
         - valid: optional list of builtins to search for
         """
-        pass
+        result = set(self._modules)
+        if valid:
+            result = result.intersection(set(self._resolve_alias_list(valid)))
+        return list(result)
 
-    def modules_lineno(self, valid: List[str] = None) -> List[str]:
+    def modules_lineno(self, valid: List[str] = None) -> Dict[str, List[int]]:
         """Return a dictionary mapping modules calls to line numbers (with aliasing resolved, and names in full dotted notation)
 
         attrs:
         ------
         - valid: optional list of builtins to search for
         """
-        pass
+        module_list = self.modules(valid)
+        result = dict()
+        for m, v in self._call_lines.items():
+            for s in module_list:
+                if m.startswith(s):
+                    result[m] = v
+                    break
+        # result = {m: list(v) for m, v in self._call_lines.items()
+        #           if any(s.startswith(m) for s in module_list)}
+        return result
 
     def report(self, valid_builtins: List[str] = None, valid_modules: List[str] = None):
         """Print on stdout builtins and modules tracking info"""
@@ -136,4 +181,4 @@ np.random.random()
 """
 
     vst = AstVisitor(code)
-    vst.report()
+    vst.report(["print"], ["pd"])
